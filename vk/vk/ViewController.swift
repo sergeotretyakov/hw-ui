@@ -12,8 +12,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var loginField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var scrollBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var scrollBottomConstraint: NSLayoutConstraint!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +36,55 @@ class ViewController: UIViewController {
             print("2")
         }
 
-        @IBAction func loginPressed() {
+        override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+            
+            switch identifier {
+            case "loginSegue":
+                let auth = login()
+                return auth
+            default:
+                return false
+            }
+        }
+        
+        func login() -> Bool {
             let login = loginField.text!
             let password = passwordField.text!
-            if login == "admin" && password == "123456" {
-                print("успешная авторизация")
-            } else {
-                print("неуспешная авторизация")
+            
+            switch (login, password) {
+            case ("admin", "123456"):
+                return true
+            case ("admin", _):
+                passwordError()
+                return false
+            default:
+                loginError()
+                return false
             }
+        }
+        
+        func loginError() {
+            
+            let alert = UIAlertController(
+                title: "Ошибка",
+                message: "Неверные имя пользователя или пароль",
+                preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true)
+        }
+        
+        func passwordError() {
+            
+            let alert = UIAlertController(
+                title: "Ошибка",
+                message: "Неверный пароль",
+                preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true)
         }
         
         @objc func keyboardWasShown(notification: Notification) {
