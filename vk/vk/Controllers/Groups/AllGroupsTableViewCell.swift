@@ -10,7 +10,8 @@ import UIKit
 
 class AllGroupsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var allGroupsImage: UIImageView!
+
+    @IBOutlet weak var allGroupsImage: RoundedImageView!
     
     @IBOutlet weak var allGroupsName: UILabel!
     

@@ -147,25 +147,29 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tIx-Ji-RXb" userLabel="Group Image">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-0K-z5M" customClass="RoundedImageView" customModule="vk" customModuleProvider="target">
                                             <rect key="frame" x="294" y="10" width="100" height="100"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="boz-XX-RRq"/>
-                                                <constraint firstAttribute="height" constant="100" id="g2L-ZF-M41"/>
+                                                <constraint firstAttribute="width" constant="100" id="Jfp-RR-zgE"/>
+                                                <constraint firstAttribute="height" constant="100" id="Vsf-P7-pMM"/>
                                             </constraints>
-                                        </imageView>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="4"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ElF-9N-blY" firstAttribute="top" secondItem="B7j-5K-9uG" secondAttribute="topMargin" constant="38.5" id="5xc-fI-KOD"/>
                                         <constraint firstItem="ElF-9N-blY" firstAttribute="leading" secondItem="B7j-5K-9uG" secondAttribute="leading" constant="50" id="N1d-9F-wqK"/>
+                                        <constraint firstItem="Unn-0K-z5M" firstAttribute="centerY" secondItem="B7j-5K-9uG" secondAttribute="centerY" id="RNl-Ki-qAH"/>
+                                        <constraint firstAttribute="trailing" secondItem="Unn-0K-z5M" secondAttribute="trailing" constant="20" id="n8s-gc-vYh"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="ElF-9N-blY" secondAttribute="bottom" constant="38.5" id="xMM-lq-Wkf"/>
-                                        <constraint firstAttribute="trailing" secondItem="tIx-Ji-RXb" secondAttribute="trailing" constant="20" id="zCl-K1-XP8"/>
                                         <constraint firstItem="ElF-9N-blY" firstAttribute="centerY" secondItem="B7j-5K-9uG" secondAttribute="centerY" id="zlM-as-xXZ"/>
-                                        <constraint firstItem="tIx-Ji-RXb" firstAttribute="centerY" secondItem="B7j-5K-9uG" secondAttribute="centerY" id="zvd-cH-qUz"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="groupImage" destination="tIx-Ji-RXb" id="caR-ns-YaT"/>
+                                    <outlet property="groupImage" destination="Unn-0K-z5M" id="xna-d9-hjA"/>
                                     <outlet property="groupName" destination="ElF-9N-blY" id="lP4-y3-Chc"/>
                                 </connections>
                             </tableViewCell>
@@ -215,24 +219,28 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ihB-w6-ARM">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08R-9x-P3b" customClass="RoundedImageView" customModule="vk" customModuleProvider="target">
                                             <rect key="frame" x="294" y="10" width="100" height="100"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="8Rs-59-nfi"/>
-                                                <constraint firstAttribute="height" constant="100" id="NrJ-R1-tEW"/>
+                                                <constraint firstAttribute="height" constant="100" id="1cV-Zg-SJz"/>
+                                                <constraint firstAttribute="width" constant="100" id="drI-TS-BBx"/>
                                             </constraints>
-                                        </imageView>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="4"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ihB-w6-ARM" firstAttribute="centerY" secondItem="0pT-Fp-twJ" secondAttribute="centerY" id="Fhr-kl-1Of"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="GLR-Gv-OrT" secondAttribute="bottom" constant="38.5" id="RFl-yL-eK5"/>
+                                        <constraint firstAttribute="trailing" secondItem="08R-9x-P3b" secondAttribute="trailing" constant="20" id="SUX-6A-dVh"/>
                                         <constraint firstItem="GLR-Gv-OrT" firstAttribute="leading" secondItem="0pT-Fp-twJ" secondAttribute="leading" constant="50" id="ahC-wH-E4L"/>
+                                        <constraint firstItem="08R-9x-P3b" firstAttribute="centerY" secondItem="0pT-Fp-twJ" secondAttribute="centerY" id="e1t-Lu-Rdm"/>
                                         <constraint firstItem="GLR-Gv-OrT" firstAttribute="centerY" secondItem="0pT-Fp-twJ" secondAttribute="centerY" id="ffS-W2-YsS"/>
-                                        <constraint firstAttribute="trailing" secondItem="ihB-w6-ARM" secondAttribute="trailing" constant="20" id="toJ-6q-dLI"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="allGroupsImage" destination="ihB-w6-ARM" id="TnC-fa-s4Z"/>
+                                    <outlet property="allGroupsImage" destination="08R-9x-P3b" id="hMi-kC-JXu"/>
                                     <outlet property="allGroupsName" destination="GLR-Gv-OrT" id="zEg-Lo-M8t"/>
                                     <segue destination="5eX-tw-yeg" kind="unwind" identifier="addGroup" unwindAction="addGroupWithSegue:" id="hsV-o6-0HT"/>
                                 </connections>
@@ -269,13 +277,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aVF-3s-Hme" userLabel="Friend Image">
-                                            <rect key="frame" x="294" y="10" width="100" height="100"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="Q6A-xc-hXD"/>
-                                                <constraint firstAttribute="width" constant="100" id="j0y-uW-DuR"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag0-Jq-Bzp" userLabel="Friend Name">
                                             <rect key="frame" x="50" y="31" width="45" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -288,20 +289,31 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T87-i1-mP9" customClass="RoundedImageView" customModule="vk" customModuleProvider="target">
+                                            <rect key="frame" x="294" y="10" width="100" height="100"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="Jzn-wO-Fw3"/>
+                                                <constraint firstAttribute="width" constant="100" id="SHb-pE-RWg"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="1"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="aVF-3s-Hme" secondAttribute="trailing" constant="20" id="3px-Np-2j3"/>
                                         <constraint firstItem="fKM-og-xNE" firstAttribute="top" secondItem="Ag0-Jq-Bzp" secondAttribute="bottom" constant="18" id="55J-DM-iIG"/>
                                         <constraint firstItem="Ag0-Jq-Bzp" firstAttribute="leading" secondItem="iPd-QW-Ogy" secondAttribute="leading" constant="50" id="aaY-4c-NZj"/>
-                                        <constraint firstItem="aVF-3s-Hme" firstAttribute="centerY" secondItem="iPd-QW-Ogy" secondAttribute="centerY" id="cqS-0E-3HW"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="fKM-og-xNE" secondAttribute="bottom" constant="18" id="hSw-bO-cCy"/>
+                                        <constraint firstAttribute="trailing" secondItem="T87-i1-mP9" secondAttribute="trailing" constant="20" id="lb1-6E-mDB"/>
                                         <constraint firstItem="fKM-og-xNE" firstAttribute="leading" secondItem="iPd-QW-Ogy" secondAttribute="leading" constant="50" id="oeb-Ep-W07"/>
+                                        <constraint firstItem="T87-i1-mP9" firstAttribute="centerY" secondItem="iPd-QW-Ogy" secondAttribute="centerY" id="ucc-d3-wCm"/>
                                         <constraint firstItem="Ag0-Jq-Bzp" firstAttribute="top" secondItem="iPd-QW-Ogy" secondAttribute="topMargin" constant="20" id="x1P-Fl-FLO"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="friendImage" destination="aVF-3s-Hme" id="JRt-eh-oxM"/>
                                     <outlet property="friendName" destination="Ag0-Jq-Bzp" id="K7C-iQ-Fz7"/>
+                                    <outlet property="friendProfilePhotoImageView" destination="T87-i1-mP9" id="Ioe-Re-ylI"/>
                                     <outlet property="friendSurname" destination="fKM-og-xNE" id="7Y4-bz-8xE"/>
                                     <segue destination="POU-33-gHI" kind="show" identifier="segueShowPhotos" id="bHz-Cb-yx8"/>
                                 </connections>
@@ -424,6 +436,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="49.5" height="50.5"/>
+        <image name="4" width="42" height="42.5"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="plus" catalog="system" width="128" height="113"/>

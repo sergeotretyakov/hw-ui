@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16162726243C6C16005ED852 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16162725243C6C16005ED852 /* RoundedImageView.swift */; };
 		163FB52E2439005C00A380F6 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163FB52D2439005C00A380F6 /* GroupsTableViewController.swift */; };
 		163FB530243900C400A380F6 /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163FB52F243900C400A380F6 /* GroupsTableViewCell.swift */; };
 		163FB5322439011200A380F6 /* ImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163FB5312439011200A380F6 /* ImagesCollectionViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16162725243C6C16005ED852 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		163FB52D2439005C00A380F6 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		163FB52F243900C400A380F6 /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
 		163FB5312439011200A380F6 /* ImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewController.swift; sourceTree = "<group>"; };
@@ -59,12 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16162724243C6BFB005ED852 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				163FB544243A4C6B00A380F6 /* LikesButton.swift */,
+				16162725243C6C16005ED852 /* RoundedImageView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		163FB5292436648D00A380F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				163FB53D2439020400A380F6 /* User.swift */,
 				163FB53F2439020E00A380F6 /* Group.swift */,
-				163FB544243A4C6B00A380F6 /* LikesButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +146,7 @@
 				163FB541243A4B6700A380F6 /* Controllers */,
 				163FB5292436648D00A380F6 /* Model */,
 				163FB52A2438FFBD00A380F6 /* Storyboards */,
+				16162724243C6BFB005ED852 /* Other */,
 			);
 			path = vk;
 			sourceTree = "<group>";
@@ -222,6 +233,7 @@
 				163FB53A243901A800A380F6 /* AllGroupsTableViewController.swift in Sources */,
 				163FB53E2439020400A380F6 /* User.swift in Sources */,
 				163FB545243A4C6B00A380F6 /* LikesButton.swift in Sources */,
+				16162726243C6C16005ED852 /* RoundedImageView.swift in Sources */,
 				163FB53C243901C900A380F6 /* AllGroupsTableViewCell.swift in Sources */,
 				163FB5342439012400A380F6 /* ImagesCollectionViewCell.swift in Sources */,
 				164FA8F72430EA1100ADD342 /* SceneDelegate.swift in Sources */,
