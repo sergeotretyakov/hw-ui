@@ -34,7 +34,7 @@ class FriendsTableViewController: UITableViewController {
 
         cell.friendName.text = friends[indexPath.row].name
         cell.friendSurname.text = friends[indexPath.row].surname
-        cell.friendImage.image = UIImage(named: friends[indexPath.row].photo)
+        cell.friendProfilePhotoImageView.image = UIImage(named: friends[indexPath.row].photo)
 
         return cell
     }
